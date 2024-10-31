@@ -1,0 +1,19 @@
+// Dialog
+@import "dialog";
+
+// Responsive video
+.qazana-video-wrapper {
+	position: relative;
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.qazana-hidden {
+	display: none;
+}

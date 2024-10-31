@@ -1,0 +1,502 @@
+/*!
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.0.2
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+
+ * Made available under a MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+
+ * Hover.css Copyright Ian Lunn 2014. Generated with Sass.
+ */
+/* 2D TRANSITIONS */
+/* Grow */
+.qazana-animation-grow {
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.qazana-animation-grow:hover, .qazana-animation-grow:focus, .qazana-animation-grow:active {
+  transform: scale(1.1);
+}
+
+/* Shrink */
+.qazana-animation-shrink {
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.qazana-animation-shrink:hover, .qazana-animation-shrink:focus, .qazana-animation-shrink:active {
+  transform: scale(0.9);
+}
+
+/* Pulse */
+@keyframes qazana-animation-pulse {
+  25% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+}
+.qazana-animation-pulse:hover, .qazana-animation-pulse:focus, .qazana-animation-pulse:active {
+  animation-name: qazana-animation-pulse;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Pulse Grow */
+@keyframes qazana-animation-pulse-grow {
+  to {
+    transform: scale(1.1);
+  }
+}
+.qazana-animation-pulse-grow:hover, .qazana-animation-pulse-grow:focus, .qazana-animation-pulse-grow:active {
+  animation-name: qazana-animation-pulse-grow;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* Pulse Shrink */
+@keyframes qazana-animation-pulse-shrink {
+  to {
+    transform: scale(0.9);
+  }
+}
+.qazana-animation-pulse-shrink:hover, .qazana-animation-pulse-shrink:focus, .qazana-animation-pulse-shrink:active {
+  animation-name: qazana-animation-pulse-shrink;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* Push */
+@keyframes qazana-animation-push {
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.qazana-animation-push:hover, .qazana-animation-push:focus, .qazana-animation-push:active {
+  animation-name: qazana-animation-push;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+/* Pop */
+@keyframes qazana-animation-pop {
+  50% {
+    transform: scale(1.2);
+  }
+}
+.qazana-animation-pop:hover, .qazana-animation-pop:focus, .qazana-animation-pop:active {
+  animation-name: qazana-animation-pop;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+/* Bounce In */
+.qazana-animation-bounce-in {
+  transition-duration: 0.5s;
+}
+.qazana-animation-bounce-in:hover, .qazana-animation-bounce-in:focus, .qazana-animation-bounce-in:active {
+  transform: scale(1.2);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+/* Bounce Out */
+.qazana-animation-bounce-out {
+  transition-duration: 0.5s;
+}
+.qazana-animation-bounce-out:hover, .qazana-animation-bounce-out:focus, .qazana-animation-bounce-out:active {
+  transform: scale(0.8);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+/* Rotate */
+.qazana-animation-rotate {
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.qazana-animation-rotate:hover, .qazana-animation-rotate:focus, .qazana-animation-rotate:active {
+  transform: rotate(4deg);
+}
+
+/* Grow Rotate */
+.qazana-animation-grow-rotate {
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.qazana-animation-grow-rotate:hover, .qazana-animation-grow-rotate:focus, .qazana-animation-grow-rotate:active {
+  transform: scale(1.1) rotate(4deg);
+}
+
+/* Float */
+.qazana-animation-float {
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+.qazana-animation-float:hover, .qazana-animation-float:focus, .qazana-animation-float:active {
+  transform: translateY(-8px);
+}
+
+/* Sink */
+.qazana-animation-sink {
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+.qazana-animation-sink:hover, .qazana-animation-sink:focus, .qazana-animation-sink:active {
+  transform: translateY(8px);
+}
+
+/* Bob */
+@keyframes qazana-animation-bob {
+  0% {
+    transform: translateY(-8px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+@keyframes qazana-animation-bob-float {
+  100% {
+    transform: translateY(-8px);
+  }
+}
+.qazana-animation-bob:hover, .qazana-animation-bob:focus, .qazana-animation-bob:active {
+  animation-name: qazana-animation-bob-float, qazana-animation-bob;
+  animation-duration: .3s, 1.5s;
+  animation-delay: 0s, .3s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal, alternate;
+}
+
+/* Hang */
+@keyframes qazana-animation-hang {
+  0% {
+    transform: translateY(8px);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+  100% {
+    transform: translateY(8px);
+  }
+}
+@keyframes qazana-animation-hang-sink {
+  100% {
+    transform: translateY(8px);
+  }
+}
+.qazana-animation-hang:hover, .qazana-animation-hang:focus, .qazana-animation-hang:active {
+  animation-name: qazana-animation-hang-sink, qazana-animation-hang;
+  animation-duration: .3s, 1.5s;
+  animation-delay: 0s, .3s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal, alternate;
+}
+
+/* Skew */
+.qazana-animation-skew {
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.qazana-animation-skew:hover, .qazana-animation-skew:focus, .qazana-animation-skew:active {
+  transform: skew(-10deg);
+}
+
+/* Skew Forward */
+.qazana-animation-skew-forward {
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform-origin: 0 100%;
+}
+.qazana-animation-skew-forward:hover, .qazana-animation-skew-forward:focus, .qazana-animation-skew-forward:active {
+  transform: skew(-10deg);
+}
+
+/* Skew Backward */
+.qazana-animation-skew-backward {
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform-origin: 0 100%;
+}
+.qazana-animation-skew-backward:hover, .qazana-animation-skew-backward:focus, .qazana-animation-skew-backward:active {
+  transform: skew(10deg);
+}
+
+/* Wobble Vertical */
+@keyframes qazana-animation-wobble-vertical {
+  16.65% {
+    transform: translateY(8px);
+  }
+  33.3% {
+    transform: translateY(-6px);
+  }
+  49.95% {
+    transform: translateY(4px);
+  }
+  66.6% {
+    transform: translateY(-2px);
+  }
+  83.25% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.qazana-animation-wobble-vertical:hover, .qazana-animation-wobble-vertical:focus, .qazana-animation-wobble-vertical:active {
+  animation-name: qazana-animation-wobble-vertical;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+/* Wobble Horizontal */
+@keyframes qazana-animation-wobble-horizontal {
+  16.65% {
+    transform: translateX(8px);
+  }
+  33.3% {
+    transform: translateX(-6px);
+  }
+  49.95% {
+    transform: translateX(4px);
+  }
+  66.6% {
+    transform: translateX(-2px);
+  }
+  83.25% {
+    transform: translateX(1px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.qazana-animation-wobble-horizontal:hover, .qazana-animation-wobble-horizontal:focus, .qazana-animation-wobble-horizontal:active {
+  animation-name: qazana-animation-wobble-horizontal;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+/* Wobble To Bottom Right */
+@keyframes qazana-animation-wobble-to-bottom-right {
+  16.65% {
+    transform: translate(8px, 8px);
+  }
+  33.3% {
+    transform: translate(-6px, -6px);
+  }
+  49.95% {
+    transform: translate(4px, 4px);
+  }
+  66.6% {
+    transform: translate(-2px, -2px);
+  }
+  83.25% {
+    transform: translate(1px, 1px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.qazana-animation-wobble-to-bottom-right:hover, .qazana-animation-wobble-to-bottom-right:focus, .qazana-animation-wobble-to-bottom-right:active {
+  animation-name: qazana-animation-wobble-to-bottom-right;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+/* Wobble To Top Right */
+@keyframes qazana-animation-wobble-to-top-right {
+  16.65% {
+    transform: translate(8px, -8px);
+  }
+  33.3% {
+    transform: translate(-6px, 6px);
+  }
+  49.95% {
+    transform: translate(4px, -4px);
+  }
+  66.6% {
+    transform: translate(-2px, 2px);
+  }
+  83.25% {
+    transform: translate(1px, -1px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.qazana-animation-wobble-to-top-right:hover, .qazana-animation-wobble-to-top-right:focus, .qazana-animation-wobble-to-top-right:active {
+  animation-name: qazana-animation-wobble-to-top-right;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+/* Wobble Top */
+@keyframes qazana-animation-wobble-top {
+  16.65% {
+    transform: skew(-12deg);
+  }
+  33.3% {
+    transform: skew(10deg);
+  }
+  49.95% {
+    transform: skew(-6deg);
+  }
+  66.6% {
+    transform: skew(4deg);
+  }
+  83.25% {
+    transform: skew(-2deg);
+  }
+  100% {
+    transform: skew(0);
+  }
+}
+.qazana-animation-wobble-top {
+  transform-origin: 0 100%;
+}
+.qazana-animation-wobble-top:hover, .qazana-animation-wobble-top:focus, .qazana-animation-wobble-top:active {
+  animation-name: qazana-animation-wobble-top;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+/* Wobble Bottom */
+@keyframes qazana-animation-wobble-bottom {
+  16.65% {
+    transform: skew(-12deg);
+  }
+  33.3% {
+    transform: skew(10deg);
+  }
+  49.95% {
+    transform: skew(-6deg);
+  }
+  66.6% {
+    transform: skew(4deg);
+  }
+  83.25% {
+    transform: skew(-2deg);
+  }
+  100% {
+    transform: skew(0);
+  }
+}
+.qazana-animation-wobble-bottom {
+  transform-origin: 100% 0;
+}
+.qazana-animation-wobble-bottom:hover, .qazana-animation-wobble-bottom:focus, .qazana-animation-wobble-bottom:active {
+  animation-name: qazana-animation-wobble-bottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+/* Wobble Skew */
+@keyframes qazana-animation-wobble-skew {
+  16.65% {
+    transform: skew(-12deg);
+  }
+  33.3% {
+    transform: skew(10deg);
+  }
+  49.95% {
+    transform: skew(-6deg);
+  }
+  66.6% {
+    transform: skew(4deg);
+  }
+  83.25% {
+    transform: skew(-2deg);
+  }
+  100% {
+    transform: skew(0);
+  }
+}
+.qazana-animation-wobble-skew:hover, .qazana-animation-wobble-skew:focus, .qazana-animation-wobble-skew:active {
+  animation-name: qazana-animation-wobble-skew;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+/* Buzz */
+@keyframes qazana-animation-buzz {
+  50% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+.qazana-animation-buzz:hover, .qazana-animation-buzz:focus, .qazana-animation-buzz:active {
+  animation-name: qazana-animation-buzz;
+  animation-duration: 0.15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Buzz Out */
+@keyframes qazana-animation-buzz-out {
+  10% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    transform: translateX(-1px) rotate(0);
+  }
+}
+.qazana-animation-buzz-out:hover, .qazana-animation-buzz-out:focus, .qazana-animation-buzz-out:active {
+  animation-name: qazana-animation-buzz-out;
+  animation-duration: 0.75s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+/*# sourceMappingURL=hover.css.map */

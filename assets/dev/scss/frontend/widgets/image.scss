@@ -1,0 +1,26 @@
+//
+
+// Image
+
+//
+
+.qazana-widget-image {
+  .qazana-image {
+    > a,
+    figure > a {
+      display : block;
+      // For alignment image with link
+    }
+
+    img {
+      display        : inline-block;
+      vertical-align : middle;
+    }
+
+    &.qazana-image-shape- {
+      &circle {
+        border-radius : 50%;
+      }
+    }
+  }
+}

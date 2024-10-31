@@ -1,0 +1,59 @@
+
+/*= Qazana System Info
+---------------------------------------*/
+
+#qazana-system-info {
+	padding: 15px;
+
+	.qazana-system-info-section {
+		margin-bottom: 10px;
+
+		& > .qazana-system-info-report-name {
+			padding-left: 10px;
+			border-bottom: 1px solid #e1e1e1;
+		}
+	}
+
+	.qazana-system-info-report-name {
+		text-transform: uppercase;
+		font-size: 14px;
+		margin: 0;
+		line-height: 2;
+	}
+
+	.qazana-system-info-report-row {
+		overflow: hidden;
+		padding: 5px 0;
+
+		> * {
+			float: left;
+		}
+	}
+
+	.qazana-system-info-report-field, .qazana-system-info-field-recommendation {
+		padding-left: 10px;
+		color: #7F7F7F;
+	}
+
+	.qazana-system-info-report-fields {
+		padding-left: 20px;
+	}
+
+	.qazana-system-info-plugin-name {
+		color: #000;
+	}
+
+	.qazana-system-info-plugin-properties {
+		padding: 10px;
+	}
+
+	#qazana-system-info-raw-code {
+		width: 100%;
+		height: 200px;
+	}
+
+	#qazana-system-info-raw-code-label {
+		padding: 5px;
+		display: block;
+	}
+}

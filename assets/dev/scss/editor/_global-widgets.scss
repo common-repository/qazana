@@ -1,0 +1,89 @@
+#qazana-panel-global-widget {
+    height: 100%;
+}
+
+#qazana-panel-global-widget > * {
+    background-color: #fff;
+}
+
+#qazana-global-widget-locked-header {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+#qazana-global-widget-locked-header.qazana-panel-nerd-box {
+    padding: 40px 25px;
+}
+
+#qazana-global-widget-locked-tools {
+    margin-top: 15px;
+    padding: 0 20px;
+}
+
+.qazana-global-widget-locked-tool {
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px 0;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.qazana-global-widget-locked-tool .qazana-button {
+    text-transform: uppercase;
+    color: #fff;
+    padding: 8px 0;
+    width: 70px;
+    font-weight: 600;
+}
+
+.qazana-global-widget-locked-tool-description {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+#qazana-global-widget-locked-unlink {
+    border-top: 1px solid #e6e9ec;
+}
+
+#qazana-global-widget-locked-unlink .qazana-button {
+    background-color: #aa1714;
+}
+
+#qazana-global-templates {
+    padding: 0 5px;
+}
+
+#qazana-global-templates .qazana-element {
+    position: relative;
+}
+
+#qazana-global-templates .qazana-element:before {
+    position: absolute;
+    font-family: FontAwesome;
+    content: '\f07b';
+    top: 5px;
+    left: 5px;
+    color: #fcb92c;
+    font-size: 10px;
+}
+
+#qazana-global-widget-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#qazana-global-widget-loading:not(.qazana-hidden) {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#qazana-global-widget-loading i {
+    color: #d5dadf;
+    font-size: 50px;
+}

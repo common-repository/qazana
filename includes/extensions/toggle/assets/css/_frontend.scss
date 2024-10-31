@@ -1,0 +1,71 @@
+$direction: ltr;
+
+@import 'helpers/variables';
+@import "helpers/mixins";
+@import "helpers/direction";
+//
+// Toggle
+//
+
+.qazana-toggle {
+	text-align: $start;
+
+	.qazana-tab-title {
+		font-weight: bold;
+		line-height: 1;
+		padding: 15px;
+		border-bottom: 1px solid $gray-light;
+        cursor: pointer;
+        
+        &:focus {
+            outline: none;
+        }
+
+		.qazana-tab-icon {
+			display: inline-block;
+			width: 1em;
+
+			.fa {
+
+				&:before {
+					content: getValueByDirection('\f0da', '\f0d9');
+				}
+			}
+		}
+
+		&.qazana-active {
+			border-bottom: none;
+
+			.qazana-tab-icon {
+
+				.fa {
+
+					&:before {
+						content: '\f0d7';
+					}
+				}
+			}
+		}
+	}
+
+	.qazana-tab-content {
+	    padding: 0 15px 15px;
+		border-bottom: 1px solid $gray-light;
+	    display: none;
+	}
+}
+
+// Responsive mode
+@media (max-width: $screen-sm-max) {
+
+	.qazana-toggle {
+
+		.qazana-tab-title {
+			padding: 12px;
+		}
+
+		.qazana-tab-content {
+			padding: 0 12px 10px;
+		}
+	}
+}

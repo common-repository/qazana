@@ -1,0 +1,34 @@
+.qazana-shortcode-input {
+    min-width: 215px;
+}
+
+#available-widgets [class*="qazana-template"] .widget-title:before {
+    content: "\e801";
+    font-family: eicon;
+    font-size: 17px;
+}
+
+#qazana-widget-template-empty-templates {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.qazana-widget-template-empty-templates-title {
+    padding: 25px 0 30px;
+}
+
+.qazana-widget-template-empty-templates-icon {
+    font-size: 96px;
+    color: #d5dadf;
+}
+
+.qazana-widget-template-empty-templates-footer {
+    color: #a4afb7;
+    font-size: 13px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.qazana-widget-template-empty-templates-footer a {
+    color: #a4afb7;
+}

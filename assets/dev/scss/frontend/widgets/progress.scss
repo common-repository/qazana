@@ -1,0 +1,86 @@
+//
+// Progress Bar
+//
+
+.qazana-widget-progress {
+	text-align: $start;
+}
+
+.qazana-progress-wrapper {
+	position: relative;
+	background-color: $progress-bg;
+	color: $progress-text;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 2px;
+
+}
+
+.qazana-progress-bar {
+	position: absolute;
+	display: inline-block;
+	background-color: $gray;
+	height: 100%;
+	width: 0;
+	border-radius: 2px;
+	transition: width 1s ease-in-out;
+}
+
+.qazana-progress-inner-text {
+	display: inline-block;
+	position: absolute;
+	@include start(0);
+	padding: 0 15px;
+	font-size: 11px;
+	width: 0;
+	transition: width 1s ease-in-out;
+
+	.qazana-progress-percentage {
+		position: relative;
+		float: $end;
+	}
+}
+
+.qazana-widget-progress {
+	.qazana-progress-wrapper {
+		&.progress-info {
+			.qazana-progress-bar {
+				background-color: $info;
+			}
+		}
+
+		&.progress-success {
+			.qazana-progress-bar {
+				background-color: $success;
+			}
+		}
+
+		&.progress-warning {
+			.qazana-progress-bar {
+				background-color: $warning;
+			}
+		}
+
+		&.progress-danger {
+			.qazana-progress-bar {
+				background-color: $danger;
+			}
+		}
+	}
+}
+
+.qazana-progress .qazana-title {
+	display: block;
+}
+
+// Responsive mode
+@media (max-width: $screen-sm-max) {
+	.qazana-progress-wrapper {
+		height: 25px;
+		line-height: 25px;
+
+		.qazana-progress-inner-text {
+			padding: 0 10px;
+		}
+	}
+}

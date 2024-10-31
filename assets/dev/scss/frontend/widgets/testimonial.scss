@@ -1,0 +1,114 @@
+// testimonial
+.qazana-testimonial-wrapper {
+  overflow   : hidden;
+  margin     : 1em;
+  text-align : center;
+
+  &.qazana-element-style- {
+    &1 {}
+
+    &2 {
+      .qazana-testimonial-content {
+        padding          : 1.5em;
+        background-color : #f7f7f7;
+      }
+    }
+
+    &3 {
+      .qazana-testimonial-content {
+        padding          : 1.5em;
+        background-color : #f7f7f7;
+
+        &:after {
+          border-top : 8px solid #f7f7f7;
+        }
+      }
+    }
+  }
+
+  &.qazana-testimonial-text-align- {
+    &left {
+      text-align : left;
+
+      .qazana-testimonial-content {
+        &:after {
+          left        : 42px;
+          margin-left : 0;
+        }
+      }
+    }
+
+    &right {
+      text-align : right;
+
+      .qazana-testimonial-content {
+        &:after {
+          right       : 42px;
+          left        : auto;
+          margin-left : 0;
+        }
+      }
+    }
+  }
+
+  .qazana-testimonial-image-position-aside {
+    .qazana-testimonial-details,
+    .qazana-testimonial-image {
+      display        : table-cell;
+      vertical-align : middle;
+    }
+  }
+
+  .qazana-testimonial-image-position-top.qazana-testimonial-meta {
+    .qazana-testimonial-details,
+    .qazana-testimonial-image {
+      display : block;
+    }
+  }
+
+  .qazana-testimonial-content {
+    position      : relative;
+    margin-bottom : 1em;
+    font-size     : 1em;
+
+    &:after {
+      position            : absolute;
+      bottom              : -8px;
+      left                : 50%;
+      margin-left         : -4px;
+      width               : 0;
+      height              : 0;
+      border-top          : 8px solid #f7f7f7;
+      border-right        : 8px solid transparent;
+      border-bottom-width : 0;
+      border-left         : 8px solid transparent;
+      content             : '';
+    }
+  }
+
+  .qazana-testimonial-name {
+    line-height : 1.5;
+  }
+
+  .qazana-testimonial-job {
+    margin-top : 0.3em;
+    font-size  : 0.85em;
+  }
+
+  .qazana-testimonial-meta {
+    width       : 100%;
+    line-height : 1;
+
+    &-inner {
+      display : inline-block;
+    }
+
+    .qazana-testimonial-image {
+      img {
+        width         : 60px;
+        height        : 60px;
+        border-radius : 50%;
+      }
+    }
+  }
+}

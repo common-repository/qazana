@@ -1,0 +1,176 @@
+//
+// Schemes
+//
+.qazana-panel-scheme-title {
+	padding: 10px 20px;
+	margin-top: 10px;
+}
+
+.qazana-panel-scheme-description {
+	padding: 20px 20px 0;
+}
+
+.qazana-panel-scheme-buttons {
+	padding: 0 20px;
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	height: 40px;
+	background-color: #fff;
+	box-shadow: $panel-bottom-shadow;
+}
+
+.qazana-panel-scheme-button-wrapper {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+
+	&:first-child {
+		text-align: $start;
+	}
+
+	&:last-child {
+		text-align: $end;
+	}
+}
+
+.qazana-panel-scheme-save {
+
+	.qazana-button {
+		padding: 6px 18px;
+		text-transform: uppercase;
+	}
+}
+
+.qazana-panel-scheme-reset, .qazana-panel-scheme-discard {
+
+	.qazana-button {
+		color: $editor-light;
+		background: none;
+
+		&:hover {
+
+		}
+	}
+}
+
+
+.qazana-panel-scheme-color {
+
+	.qazana-panel-scheme-items {
+		position: relative;
+	}
+
+	.qazana-panel-scheme-item {
+		display: inline-block;
+
+		&:not(:nth-child(4n)) {
+
+			@media(max-width: $screen-lg-max) {
+				@include margin-end(13px);
+			}
+
+			@media(min-width: $screen-xl-min) {
+				@include margin-end(19px);
+			}
+		}
+	}
+
+	.wp-picker-container {
+
+		&.wp-picker-active {
+			transform: translateY(10px);
+
+			.wp-color-result {
+
+				@media(max-width: $screen-lg-max) {
+					margin-right: 4px;
+				}
+
+				@media(min-width: $screen-xl-min) {
+					margin-right: 6px;
+				}
+			}
+		}
+	}
+}
+
+.qazana-panel-scheme-color-title {
+	text-align: center;
+	text-transform: uppercase;
+	margin: 10px 0;
+	color: $editor-lighter;
+	font-size: 8px;
+}
+
+.qazana-panel-scheme-typography-item {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	margin-bottom: 15px;
+
+	 > * {
+		 display: table-cell;
+		 vertical-align: middle;
+	 }
+}
+
+.qazana-panel-scheme-typography-item-value {
+
+	select, input {
+		width: 100%;
+	}
+}
+
+.qazana-panel-scheme-item {
+
+	.qazana-panel-heading {
+
+		&:not(.qazana-open) {
+
+			+ .qazana-panel-scheme-typography-items {
+				display: none;
+			}
+		}
+	}
+}
+
+.qazana-panel-scheme-color-system-scheme {
+	margin-bottom: 10px;
+
+	.qazana-title {
+		font-size: 11px;
+		color: $editor-light;
+		font-style: italic;
+		margin-top: 5px;
+	}
+}
+
+.qazana-panel-scheme-color-system-items {
+	display: flex;
+	transition: border .5s;
+	overflow: hidden;
+	padding: 3px;
+	border-radius: 3px;
+	border: 1px solid $editor-lightest;
+	cursor: pointer;
+
+	&:hover {
+		border: 1px solid $editor-light;
+	}
+}
+
+.qazana-panel-scheme-color-system-item {
+	height: 20px;
+	flex-grow: 1;
+}
+
+#qazana-panel-schemes-disabled {
+
+	a {
+		
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

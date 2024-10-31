@@ -1,0 +1,52 @@
+$direction: ltr;
+
+@import 'helpers/variables';
+@import "helpers/mixins";
+@import "helpers/direction";
+
+//
+// Counter
+//
+
+.qazana-counter {
+	.qazana-counter- {
+		&number- {
+			&wrapper {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: #222;
+				text-align: center;
+				font-weight: 600;
+				font-size: 69px;
+				line-height: 1;
+			}
+
+			&prefix {
+				flex-grow: 1;
+				text-align: $end;
+			}
+
+			&suffix {
+				flex-grow: 1;
+				text-align: $start;
+			}
+		}
+
+		&title {
+			color: #666666;
+			text-align: center;
+			font-weight: 400;
+			font-size: 19px;
+			line-height: 2.5;
+		}
+		&subtitle {
+			color: #666666;
+			text-align: center;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 1.5;
+		}
+	}
+}
+
